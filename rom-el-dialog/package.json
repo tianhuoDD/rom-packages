@@ -1,0 +1,26 @@
+{
+	"name": "@rom/el-dialog",
+	"version": "0.0.1",
+	"description": "@Rom写的对element-plus的 dialog 组件二次封装",
+	"main": "index.js",
+	"scripts": {},
+	"keywords": [
+		"element-plus",
+		"dialog",
+		"vue",
+		"封装"
+	],
+	"exports": {
+		".": {
+			"import": "./index.js",
+			"types": "./types/global.d.ts"
+		}
+	},
+	"author": "Rom",
+	"license": "MIT",
+	"peerDependencies": {
+		"element-plus": ">=2.8.8",
+		"vue": ">=3.0.0",
+		"@vueuse/core": ">=12.0.0"
+	}
+}

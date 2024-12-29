@@ -1,0 +1,21 @@
+{
+	"name": "@rom/el-table",
+	"version": "0.0.1",
+	"description": "@Rom写的对element-plus的table组件二次封装",
+	"main": "index.js",
+	"scripts": {},
+	"keywords": [
+		"element-plus",
+		"table",
+		"vue",
+		"封装"
+	],
+	"exports": {
+		".": {
+			"import": "./index.js",
+			"types": "./types/global.d.ts"
+		}
+	},
+	"author": "Rom",
+	"license": "MIT"
+}
