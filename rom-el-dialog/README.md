@@ -32,3 +32,26 @@ app.use(ElementPlus);
 // 挂载 app
 app.mount("#app");
 ```
+
+3. 使用
+
+```vue
+<template>
+	<el-button @click="openDialog">打开弹窗</el-button>
+	<rom-dialog-message v-model="dialogVisible" title="复制淘宝、天猫、京东、苏宁">
+		<p>生成的商品默认是没有上架的，请手动上架商品！</p>
+		<p>
+			商品采集设置：设置 > 系统设置 > 第三方接口设置 >
+			采集商品配置（如配置一号通采集，请先登录一号通账号，无一号通，请选择99Api设置）
+		</p>
+	</rom-dialog-message>
+</template>
+<script setup>
+import { DialogMessage as RomDialogMessage } from "@rom/el-dialog";
+import { ref } from "vue";
+const dialogVisible = ref(false);
+const openDialog = () => {
+	dialogVisible.value = true;
+};
+</script>
+```
